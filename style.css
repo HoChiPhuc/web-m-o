@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #ff6f61;
+    transition: all 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #ff8a75;
+}
+
+.navbar-brand img {
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(360deg);
+}
+
+.search-bar {
+    max-width: 300px;
+    margin: auto;
+}
+
+.search-bar input {
+    transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+.contact-info a {
+    color: #ff6f61;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff8a75;
+}
+
+.dropdown-menu {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animated-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ff6f61;
+    animation: slideIn 1s ease-out;
+}
+
+.highlight {
+    color: #ff3e3e;
+    text-shadow: 1px 1px 2px #ffbdbd;
+}
+
+.subtext {
+    font-size: 1.25rem;
+    color: #555;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
